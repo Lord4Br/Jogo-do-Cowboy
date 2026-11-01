@@ -1,0 +1,10 @@
+# LEGENDAS DAS FALAS
+# Escreva o texto de cada fala embaixo do nome do áudio.
+# Cada linha aparece por um tempo igual durante a fala (2 linhas = metade do tempo cada).
+# Deixe vazio para não mostrar legenda.
+
+[boss10]
+
+[boss20]
+
+[ze]

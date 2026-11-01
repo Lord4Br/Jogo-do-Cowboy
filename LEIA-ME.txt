@@ -1,0 +1,46 @@
+DEAD MAN'S DRAW  -  estrelando ZE CAIXAO
+=========================================
+
+COMO JOGAR (Windows)
+  1. Instale o Python 3 (python.org) marcando "Add Python to PATH".
+  2. De dois cliques em JOGAR.bat  (ele instala o pygame-ce na primeira vez).
+  Ou, no terminal:   pip install pygame-ce   e depois   python main.py
+
+GERAR UM .EXE (para mandar pra quem nao tem Python)
+  De dois cliques em GERAR_EXE.bat. O arquivo sai em dist\DeadMansDraw.exe
+
+CONTROLES
+  ESPACO / ENTER / CLIQUE ...... sacar e atirar
+  CLIQUE NO CORPO DO INIMIGO ... mirar (cabeca = dano dobrado)
+  A / D ......................... desviar na camera lenta quando a arma falha
+  SETAS ......................... menus        ESC ... voltar
+  M ............................. som          F11 ... tela cheia
+
+REGRAS
+  - Nao saque antes do 3. A partir do nivel 3 eles podem dizer "2 E MEIO...".
+  - A cada nivel a contagem e o saque do inimigo ficam mais rapidos.
+  - Tiro na cabeca: 25% de chance de a cabeca explodir.
+  - A arma tem 5% de chance de falhar: a camera fica lenta e aparece A ou D.
+    A = abaixar (bala alta)   D = pular (bala baixa).
+  - Inimigos com mais de uma barra de vida precisam de mais tiros (depende da arma).
+  - A cada 5 vitorias seguidas na mesma partida voce recupera 1 coracao.
+  - Checkpoints a cada 10 niveis: se morrer no 12, pode voltar no 10.
+  - Chefoes: 10 El Derecha Izquierda (chega a cavalo), 20 Bosse Krieger (sai do caixao),
+    30 Agente Arthur (chega de aviao; a contagem vai ate 5, o ATIRE no 3 e falso!),
+    40 Loucas Girl (95% de chance de bater o carro no poste). Depois voltam mais fortes.
+  - Roupas ganhas: Farda do Krieger (20), Agente Especial (30), Maid (vencer a luta do 40).
+  - Reacao com 67 no tempo = FARMANDO AURA.
+  - NPCs podem falar antes do duelo (mineiro, sulista, chileno...).
+  - Igreja do Padre Don Santiago: 1 bencao por chefao derrotado (comeca com 1).
+    6 cartas possiveis (3 aparecem por visita): LENDARIA Tempo Morto, EPICA Anjo da Guarda,
+    RARA Bala Dupla, INCOMUM Olho de Lince, COMUM Bolso do Padre e Fe no Aco. Duram 3 rodadas.
+  - Habilidades: 1 ponto por vitoria, +3 por chefao.
+
+LEGENDAS: edite assets\legendas.txt para mudar o texto das falas.
+CONFIGURACOES: volume geral, musica, efeitos, vozes e vento no menu inicial.
+
+MENU DEBUG: no menu inicial. Dispara eventos (67, coco, helicoptero, Amanda, etc.)
+REPETIR LUTA: apos vencer, da pra repetir a mesma fase para ver os finais secretos.
+ARMAS NOVAS: Derringer, Pepperbox, Winchester 1873 e Canhao de Mao.
+
+O progresso fica salvo em save.json, nesta pasta.
